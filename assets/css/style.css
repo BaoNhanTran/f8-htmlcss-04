@@ -243,17 +243,27 @@ input:-webkit-autofill {
     text-shadow: 1px 0 0 currentColor;
 }
 
+.sign-in-link,
 .sign-up-btn {
-    min-width: 117px;
-    height: 50px;
-    padding: 16px 30px;
     font-size: 1.4rem;
     font-weight: 600;
     color: var(--Primary-heading-color-dark-blue);
+}
+
+.sign-in-link {
+    padding: 16px;
+}
+
+.sign-up-btn {
+    min-width: 117px;
+    height: 50px;
+    margin-left: 16px;
+    padding: 16px 30px;
     border-radius: 25px;
     border: 1px solid currentColor;
 }
 
+.sign-in-link:hover,
 .sign-up-btn:hover {
     opacity: 0.7;
 }
@@ -264,63 +274,67 @@ input:-webkit-autofill {
 }
 
 /* Hero media */
-.hero__media {
+/* .hero__media {
     position: relative;
     width: 550px;
     display: grid;
     grid-template-columns: 129px 236px 15px 9px 171px;
     grid-template-rows: 302px 124px 62px 58px 36px;
+} */
+
+.hero__media {
+    position: relative;
+    display: flex;
+    width: 550px;
+    padding-bottom: 36px;
 }
 
 /* Hero background */
 .hero-vortex {
-    bottom: 104px;
+    bottom: 10px;
     left: -58px;
 }
 
 .hero-interwoven {
     top: 17px;
-    right: 122px;
+    right: -42px;
+    z-index: -1;
 }
 
 .hero-img-1-wrapper {
+    /* grid-area: 1 / 1 / 4 / 5; */
+    width: 388px;
+    height: 488px;
     position: relative;
-    grid-area: 1 / 1 / 4 / 5;
     border-radius: 16px;
     background: #fe997b;
     border: 3px solid var(--white);
 }
 
-.hero-img-1 {
-    width: 100%;
-    height: 100%;
+.hero-thumb-1 {
+    position: relative;
+    border-radius: 16px;
     object-fit: cover;
 }
 
 .hero-img-2-wrapper {
-    grid-area: 2 / 3 / -2 / -1;
+    /* grid-area: 2 / 3 / -2 / -1; */
+    width: 186px;
+    height: 244px;
+    margin: 302px 0 0 -23px;
     border-radius: 16px;
     background: #faa7ad;
     border: 3px solid #f3d8da;
     padding: 24px 1px 0 3px;
 }
 
-/* .hero-img-2 {
-    top: 24px;
-    left: -88px;
-    width: 268px;
-    height: 276px;
-} */
-
-.hero-img-2 {
-    width: 100%;
-    height: 100%;
-}
-
 /* Hero pet status card */
 .hero__pet-status-card {
-    position: relative;
-    grid-area: 3 / 2 / -1 / 4;
+    /* grid-area: 3 / 2 / -1 / 4; */
+    position: absolute;
+    bottom: 0;
+    left: 129px;
+    width: 250px;
     padding: 20px 14px;
     border-radius: 10px;
     background: var(--white);
@@ -426,7 +440,14 @@ input:-webkit-autofill {
 
 /* ------------- About section ------------- */
 .about-section {
-    padding: 53px 0;
+    padding: 53px 0 93px;
+}
+
+.about-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 146px;
+    align-items: center;
 }
 
 /* about-section__content */
@@ -446,9 +467,8 @@ input:-webkit-autofill {
 .about-section__highlights-list {
     margin-top: 57px;
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, auto);
-    gap: 36px 40px;
+    grid-template-columns: repeat(2, max-content);
+    gap: 36px 34px;
 }
 
 .about-section__highlight {
@@ -457,13 +477,15 @@ input:-webkit-autofill {
     font-weight: 500;
 }
 
-.about-section__icon-wrapper {
+.about-section__highlight::before {
+    content: url(../icons/check.svg);
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin-right: 10px;
     width: 24px;
     height: 24px;
+    margin-right: 10px;
+    padding-top: 3px;
     border-radius: 4px;
     background: #ff5d31;
 }
@@ -473,16 +495,22 @@ input:-webkit-autofill {
 }
 
 /* about-section media */
-.about-section__media {
+/* .about-section__media {
     display: grid;
-    grid-template-columns: 92px 44px 367px 83px 71.63px;
+    grid-template-columns: 92px 44px 367px 83px 50.63px;
     grid-template-rows: 157px 8px 86.766px 69.23px 238px;
+} */
+
+.about-section__media {
+    position: relative;
+    padding: 0 50.63px 0 92px;
 }
 
 .about-section__img-wrapper {
+    /* grid-area: 1 / 2 / -1 / -2; */
     position: relative;
-    grid-area: 1 / 2 / -1 / -2;
-    padding: 8px 21px 0 23px;
+    width: 494px;
+    height: 559px;
 }
 
 .about-section__img-wrapper::before {
@@ -501,9 +529,13 @@ input:-webkit-autofill {
 }
 
 /* Experience box */
-.experience {
-    position: relative;
-    grid-area: 3 / 1 / -2 / 3;
+.about-card {
+    /* grid-area: 3 / 1 / -2 / 3; */
+    position: absolute;
+    top: 165px;
+    left: 0;
+    width: 136px;
+    height: 156px;
     padding: 31px 26px 29px;
     border-radius: 10px;
     background: #5bd6e2;
@@ -514,20 +546,20 @@ input:-webkit-autofill {
     font-family: var(--font-family-heading);
 }
 
-.experience__number {
+.about-card__number {
     font-size: 4.2rem;
     font-weight: 700;
     line-height: 1;
 }
 
-.experience__desc {
+.about-card__desc {
     margin-top: 14px;
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.21;
 }
 
-.experience__paw {
+.about-card__paw {
     position: absolute;
     top: -39.19px;
     right: -31.85px;
@@ -536,14 +568,13 @@ input:-webkit-autofill {
 /* -------------------- */
 
 .about-section__rain {
-    grid-area: 2 / 4 / 4 / -1;
+    /* grid-area: 2 / 4 / 4 / -1; */
+    position: absolute;
+    top: 149px;
+    right: 0;
 }
 
 /* ------------- Vacation ------------- */
-.vacation__body {
-    padding: 93px 0;
-}
-
 .vacation-img-block__img-wrapper {
     position: relative;
     width: 458px;
@@ -592,11 +623,8 @@ input:-webkit-autofill {
 
 /* Vacation content */
 .vacation-content {
+    margin-left: auto;
     width: 557px;
-}
-
-.vacation__heading {
-    margin-top: 36px;
 }
 
 .vacation__desc {
@@ -661,6 +689,7 @@ input:-webkit-autofill {
 .vacation-service-item__icon--pet-cage {
     margin: -4px 10px 0 0;
 }
+/* ----------- */
 
 .vacation__desc--sub {
     margin-top: 36px;
@@ -693,6 +722,7 @@ input:-webkit-autofill {
 
 /* ------------- Services ------------- */
 .service {
+    margin-top: 92px;
     padding: 68px 0 100px;
     background: var(--Secondary-bg-color-dark-milky-white);
     text-align: center;
@@ -977,22 +1007,13 @@ input:-webkit-autofill {
 }
 
 .price-desc {
-    position: relative;
+    display: flex;
     line-height: 1;
-    padding-left: 24px;
 }
 
 .price-desc::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-60%) rotate(-45deg);
-    width: 10px;
-    height: 5px;
-    border-left: 1.5px solid var(--Primary-color);
-    border-bottom: 1.5px solid var(--Primary-color);
-    border-bottom-left-radius: 1px;
+    content: url(../icons/check-small.svg);
+    margin-right: 12px;
 }
 
 .price-desc--disable.price-desc::before {
