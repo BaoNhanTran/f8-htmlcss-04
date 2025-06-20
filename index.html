@@ -14,23 +14,11 @@
         />
 
         <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon" />
-        <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png" />
-        <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png" />
-        <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png" />
-        <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png" />
-        <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png" />
-        <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png" />
-        <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png" />
-        <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon/android-icon-192x192.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
-        <link rel="manifest" href="./assets/favicon/manifest.json" />
-        <meta name="msapplication-TileColor" content="#ffffff" />
-        <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png" />
-        <meta name="theme-color" content="#ffffff" />
+        <link rel="icon" type="image/png" href="./assets/favicon" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
 
         <!-- Reset -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
@@ -146,11 +134,12 @@
             <section id="about" class="about-section">
                 <div class="container">
                     <div class="about-body">
-                        <!-- About section content -->
-                        <div class="about-section__content">
+                        <!-- About section top -->
+                        <!-- About section content top -->
+                        <div class="about-section-content-top">
                             <p class="label">// About //</p>
-                            <h2 class="heading about-section__heading">Best Agency For Your Pet.</h2>
-                            <p class="desc about-section__desc">
+                            <h2 class="heading about-section-top__heading">Best Agency For Your Pet.</h2>
+                            <p class="desc about-section-top__desc">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua.
                             </p>
@@ -162,98 +151,119 @@
                             </ul>
                         </div>
 
-                        <!-- About-section media -->
-                        <div class="about-section__media">
+                        <!-- About section media top -->
+                        <div class="about-section__media--top">
                             <div class="about-card">
                                 <strong class="about-card__number">20+</strong>
                                 <p class="about-card__desc">Years Experience</p>
                                 <img src="./assets/icons/paw.svg" alt="paw" class="about-card__paw" />
                             </div>
-                            <img src="./assets/icons/rain.svg" alt="rain" class="about-section__rain" />
+                            <img src="./assets/icons/rain.svg" alt="rain" class="about-section-decor__rain" />
                             <figure class="img-wrapper about-section__img-wrapper">
                                 <img src="./assets/img/about.png" alt="about" class="image about-section__img" />
                             </figure>
                         </div>
 
-                        <!-- Vacation -->
-                        <!-- Vacation ima block -->
-                        <figure class="vacation-img-block__img-wrapper">
-                            <img src="./assets/img/vacation.png" alt="" class="vacation-img-block__img" />
-                            <!-- Vacation img block decoration -->
+                        <!-- About section bottom -->
+                        <!-- About section media bottom -->
+                        <figure class="about-section__media--bottom">
+                            <img src="./assets/img/vacation.png" alt="" class="about-section-bottom__img" />
+                            <!-- About section media bottom decoration -->
                             <img
                                 src="./assets/icons/wavy-line-medium.svg"
                                 alt="medium wavy line"
-                                class="absolute vacation-img-block__wavy-line-medium"
+                                class="absolute about-section-decor__wavy-line-medium"
                             />
                             <img
                                 src="./assets/icons/wavy-line-small.svg"
                                 alt="small wavy line"
-                                class="absolute vacation-img-block__wavy-line-small"
+                                class="absolute about-section-decor__wavy-line-small"
                             />
                             <img
                                 src="./assets/icons/wavy-line-large.svg"
                                 alt="large wavy line"
-                                class="absolute vacation-img-block__wavy-line-large"
+                                class="absolute about-section-decor__wavy-line-large"
                             />
                             <img
                                 src="./assets/icons/triangle-fill.svg"
                                 alt="fill triangle"
-                                class="absolute vacation-img-block__triangle-fill"
+                                class="absolute about-section-decor__triangle-fill"
                             />
                             <img
                                 src="./assets/icons/triangle-outline.svg"
                                 alt="outline triangle"
-                                class="absolute vacation-img-block__triangle-outline"
+                                class="absolute about-section-decor__triangle-outline"
                             />
                             <img
                                 src="./assets/icons/three-circles.svg"
                                 alt="three circles"
-                                class="absolute vacation-img-block__three-circles"
+                                class="absolute about-section-decor__three-circles"
                             />
                         </figure>
 
-                        <!-- Vacation content -->
-                        <div class="vacation-content">
+                        <!-- About section content bottom -->
+                        <div class="about-section__content--bottom">
                             <h2 class="heading">Taking A Vacation? So Is Your Pet.</h2>
-                            <p class="desc vacation__desc">
+                            <p class="desc about-section-bottom__desc">
                                 We offer long-term and short-term boarding. Every dog has its own private, spacious room
                                 and daily individual time in our large play yard.
                             </p>
-                            <ul class="vacation-services-list flex-center-between">
-                                <!-- Vacation service item 1 -->
-                                <li class="vacation-service-item">
+                            <ul class="about-section-tab-list flex-center-between">
+                                <!-- About section tab item 1 -->
+                                <li class="about-section-tab-item about-section-tab-item--active">
                                     <img
                                         src="./assets/icons/home.svg"
                                         alt="home"
-                                        class="vacation-service-item__icon--home"
+                                        class="about-section-tab-item__icon"
                                     />
-                                    <span class="vacation-service-item__desc">Pet Boarding</span>
+                                    <span class="about-section-tab-item__desc">Pet Boarding</span>
                                 </li>
 
-                                <!-- Vacation service item 2 -->
-                                <li class="vacation-service-item">
+                                <!-- About section tab item 2 -->
+                                <li class="about-section-tab-item">
                                     <img
                                         src="./assets/icons/hospital.svg"
                                         alt="hospital"
-                                        class="vacation-service-item__icon--hospital"
+                                        class="about-section-tab-item__icon"
                                     />
-                                    <span class="vacation-service-item__desc">Pet Daycare</span>
+                                    <span class="about-section-tab-item__desc">Pet Daycare</span>
                                 </li>
 
-                                <!-- Vacation service item 3 -->
-                                <li class="vacation-service-item">
+                                <!-- About section tab item 3 -->
+                                <li class="about-section-tab-item">
                                     <img
                                         src="./assets/icons/pet-cage.svg"
                                         alt="pet cage"
-                                        class="vacation-service-item__icon--pet-cage"
+                                        class="about-section-tab-item__icon"
                                     />
-                                    <span class="vacation-service-item__desc">Pet Transport</span>
+                                    <span class="about-section-tab-item__desc">Pet Transport</span>
                                 </li>
                             </ul>
-                            <p class="desc desc--small vacation__desc--sub">
-                                While you're on holiday, here's where your furry friends will spend their time.
-                            </p>
-                            <a href="#!" class="link vacation__link">View more</a>
+                            <ul class="about-section-tab__contents-list">
+                                <!-- About section tab content item 1 -->
+                                <li class="about-section-tab__content-item about-section-tab__content-item--active">
+                                    <p class="desc desc--small about-section-content-item__desc">
+                                        While you're on holiday, here's where your furry friends will spend their time.
+                                    </p>
+                                    <a href="#!" class="link about-section-link">View more</a>
+                                </li>
+
+                                <!-- About section tab content item 2 -->
+                                <li class="about-section-tab__content-item">
+                                    <p class="desc desc--small about-section-content-item__desc">
+                                        While you're on holiday, here's where your furry friends will spend their time.
+                                    </p>
+                                    <a href="#!" class="link about-section-link">View more</a>
+                                </li>
+
+                                <!-- About section tab content item 3 -->
+                                <li class="about-section-tab__content-item">
+                                    <p class="desc desc--small about-section-content-item__desc">
+                                        While you're on holiday, here's where your furry friends will spend their time.
+                                    </p>
+                                    <a href="#!" class="link about-section-link">View more</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -265,14 +275,16 @@
                     <div class="service-body">
                         <p class="label">What we do for you?</p>
                         <h2 class="heading">Our Services</h2>
-                        <div class="services-block main-row">
+                        <div class="services-block">
                             <!-- Text column 1 -->
-                            <div class="services-block__text-column">
+                            <div>
                                 <!-- Service item 1 -->
                                 <div class="service-item">
-                                    <h3 class="heading heading--small service-item__heading line-clamp">
-                                        Puppy Sitting
-                                    </h3>
+                                    <a href="#!">
+                                        <h3 class="heading heading--small service-item__heading line-clamp">
+                                            Puppy Sitting
+                                        </h3>
+                                    </a>
                                     <p class="desc desc--small service-item__desc line-clamp line-3">
                                         Helping your new pup to be a good boy or girl isn’t always easy, but we’re here
                                         to help.
@@ -311,15 +323,15 @@
                             </div>
 
                             <!-- Service media column -->
-                            <div class="service-block__media-column">
-                                <div class="service-img-wrapper">
+                            <div>
+                                <figure class="service-img-wrapper">
                                     <img src="./assets/img/service.png" alt="" class="service-img" />
-                                </div>
+                                </figure>
                                 <a href="#!" class="btn btn--outline service-btn">View All Services</a>
                             </div>
 
                             <!-- Text column 2 -->
-                            <div class="services-block__text-column">
+                            <div>
                                 <!-- Service item 4 -->
                                 <div class="service-item">
                                     <h3 class="heading heading--small service-item__heading line-clamp">
@@ -742,7 +754,7 @@
                         <!-- Footer form -->
                         <form
                             action="https://api-gateway.fullstack.edu.vn/action_page.php"
-                            class="footer-form flex-center-between"
+                            class="footer-form center-y"
                         >
                             <input
                                 type="email"
@@ -823,9 +835,13 @@
                         <!-- Footer right item 3 -->
                         <div class="footer-right-item">
                             <p class="footer-strong">Contact Info</p>
-                            <p class="desc desc--small footer__desc footer-right-item-3__desc">
-                                abc@gmail.com 0 (800)-000-00-00 New York, NY, Rocawy 7
-                            </p>
+                            <a href="mailto:abc@gmail.com" class="desc desc--small footer__desc footer-link"
+                                >abc@gmail.com</a
+                            >
+                            <a href="tel:0 (800)-000-00-00" class="desc desc--small footer__desc footer-link"
+                                >0 (800)-000-00-00</a
+                            >
+                            <p class="desc desc--small footer__desc">New York, NY, Rocawy 7</p>
                         </div>
 
                         <!-- Footer right item 4 -->

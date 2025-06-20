@@ -450,16 +450,16 @@ input:-webkit-autofill {
     align-items: center;
 }
 
-/* about-section__content */
-.about-section__content {
+/* About section content top */
+.about-section-content-top {
     font-family: var(--font-family-secondary);
 }
 
-.about-section__heading {
+.about-section-top__heading {
     width: 446px;
 }
 
-.about-section__desc {
+.about-section-top__desc {
     width: 431px;
 }
 
@@ -494,14 +494,14 @@ input:-webkit-autofill {
     column-gap: 36px;
 }
 
-/* about-section media */
-/* .about-section__media {
+/* About section media top */
+/* .about-section__media--top {
     display: grid;
     grid-template-columns: 92px 44px 367px 83px 50.63px;
     grid-template-rows: 157px 8px 86.766px 69.23px 238px;
 } */
 
-.about-section__media {
+.about-section__media--top {
     position: relative;
     padding: 0 50.63px 0 92px;
 }
@@ -528,7 +528,7 @@ input:-webkit-autofill {
     position: relative;
 }
 
-/* Experience box */
+/* About card */
 .about-card {
     /* grid-area: 3 / 1 / -2 / 3; */
     position: absolute;
@@ -567,15 +567,15 @@ input:-webkit-autofill {
 }
 /* -------------------- */
 
-.about-section__rain {
+.about-section-decor__rain {
     /* grid-area: 2 / 4 / 4 / -1; */
     position: absolute;
     top: 149px;
     right: 0;
 }
 
-/* ------------- Vacation ------------- */
-.vacation-img-block__img-wrapper {
+/* About section bottom - Vacation */
+.about-section__media--bottom {
     position: relative;
     width: 458px;
     height: 500px;
@@ -584,62 +584,61 @@ input:-webkit-autofill {
     box-shadow: 0px 17px 77px -8px rgba(190, 165, 139, 0.17);
 }
 
-.vacation-img-block__img {
+.about-section-bottom__img {
     border-radius: 18px;
     object-fit: cover;
     background: linear-gradient(180deg, #c6e2fa 0%, #94c2ea 100%);
 }
 
-/* Vacation img block decoration */
-.vacation-img-block__wavy-line-medium {
+/* About section media decoration */
+.about-section-decor__wavy-line-medium {
     top: -16px;
     right: 13px;
 }
 
-.vacation-img-block__wavy-line-small {
+.about-section-decor__wavy-line-small {
     top: 12px;
     right: 63px;
 }
 
-.vacation-img-block__wavy-line-large {
+.about-section-decor__wavy-line-large {
     top: 33px;
     right: -21px;
 }
 
-.vacation-img-block__triangle-fill {
+.about-section-decor__triangle-fill {
     top: 268px;
     right: -33px;
 }
 
-.vacation-img-block__triangle-outline {
+.about-section-decor__triangle-outline {
     bottom: 150px;
     right: 19px;
 }
 
-.vacation-img-block__three-circles {
+.about-section-decor__three-circles {
     bottom: -55px;
     right: -42px;
 }
 
-/* Vacation content */
-.vacation-content {
+/* About section content bottom */
+.about-section__content--bottom {
     margin-left: auto;
     width: 557px;
 }
 
-.vacation__desc {
+.about-section-bottom__desc {
     width: 511px;
 }
 
-/* Vacation services list */
-.vacation-services-list {
-    margin-top: 50px;
+/* About section tab list */
+.about-section-tab-list {
+    margin-top: 52px;
     position: relative;
-    padding: 2px 0;
 }
 
-.vacation-services-list::before,
-.vacation-services-list::after {
+.about-section-tab-list::before,
+.about-section-tab-item--active:before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -651,25 +650,23 @@ input:-webkit-autofill {
     opacity: 0.07;
 }
 
-.vacation-services-list::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 95px;
-    height: 2px;
-    background: var(--Primary-color);
-    border-radius: 99px;
+.about-section-tab-item--active:before {
     opacity: 1;
 }
 
-.vacation-service-item {
+/* About section tab item */
+.about-section-tab-item {
     display: flex;
     align-items: center;
+    padding-bottom: 10px;
     cursor: pointer;
 }
 
-.vacation-service-item__desc {
+.about-section-tab-item--active {
+    position: relative;
+}
+
+.about-section-tab-item__desc {
     margin-top: -3px;
     color: var(--tertiary-text-color-dark-gray);
     font-family: var(--font-family-heading);
@@ -678,25 +675,24 @@ input:-webkit-autofill {
     line-height: 1;
 }
 
-.vacation-service-item__icon--home {
-    margin: 0 2px 0 -8px;
+.about-section-tab-item__icon {
+    margin-right: 10px;
 }
 
-.vacation-service-item__icon--hospital {
-    margin: 0 10px -5px 0;
-}
-
-.vacation-service-item__icon--pet-cage {
-    margin: -4px 10px 0 0;
-}
-/* ----------- */
-
-.vacation__desc--sub {
+.about-section-tab__content-item {
+    display: none;
     margin-top: 36px;
+}
+
+.about-section-tab__content-item--active {
+    display: block;
+}
+
+.about-section-content-item__desc {
     width: 391px;
 }
 
-.vacation__link {
+.about-section-link {
     display: inline-block;
     position: relative;
     margin-top: 32px;
@@ -705,11 +701,11 @@ input:-webkit-autofill {
     transition: opacity 0.2s;
 }
 
-.vacation__link:hover {
+.about-section-link:hover {
     opacity: 0.8;
 }
 
-.vacation__link::after {
+.about-section-link::after {
     content: '';
     position: absolute;
     bottom: -3px;
@@ -730,16 +726,15 @@ input:-webkit-autofill {
 
 .services-block {
     margin-top: 71px;
-}
-
-.services-block__text-column {
-    width: 294px;
     display: grid;
-    grid-template-rows: repeat(3, 208px);
-    row-gap: 24px;
+    grid-template-columns: 294px 1fr 294px;
+    column-gap: 68px;
 }
 
 /* Service item */
+.service-item + .service-item {
+    margin-top: 24px;
+}
 .service-item {
     text-align: left;
     padding: 30px 22px 30px 28px;
@@ -781,10 +776,6 @@ input:-webkit-autofill {
 }
 
 /* Service media column */
-.service-block__media-column {
-    width: 447px;
-}
-
 .service-img-wrapper {
     position: relative;
 }
@@ -1243,6 +1234,8 @@ input:-webkit-autofill {
 }
 
 .footer-email {
+    flex: 1;
+    margin-right: 6px;
     padding-left: 22px;
     font-family: var(--font-family);
     color: var(--Primary-text-color-gray-lv1);
