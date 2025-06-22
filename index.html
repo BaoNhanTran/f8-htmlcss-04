@@ -388,81 +388,45 @@
                     <div class="staff-list main-row">
                         <!-- Staff member 1 -->
                         <div class="staff-member">
-                            <div class="staff-img-container">
-                                <div
-                                    class="staff-img-wrapper"
-                                    style="--background: linear-gradient(180deg, #90ccff 0%, #59a8eb 95.96%)"
-                                >
-                                    <img src="./assets/img/staff-1.png" alt="staff 1" class="staff-img" />
-                                </div>
-
-                                <!-- Staff member decor -->
-                                <img
-                                    src="./assets/icons/half-circle-1.svg"
-                                    alt="half circle 1"
-                                    class="absolute staff-member__decor--bottom"
-                                />
-                            </div>
+                            <figure
+                                class="staff-img-wrapper"
+                                style="--background: linear-gradient(180deg, #90ccff 0%, #59a8eb 95.96%)"
+                            >
+                                <img src="./assets/img/staff-1.png" alt="staff 1" class="staff-img" />
+                            </figure>
                             <p class="desc desc--small staff__desc">Pet Trainer</p>
                             <h3 class="heading heading--small staff__heading">Meghan Samit</h3>
                         </div>
 
                         <!-- Staff member 2 -->
                         <div class="staff-member">
-                            <div class="staff-img-container">
-                                <div class="staff-img-wrapper">
-                                    <img src="./assets/img/staff-2.png" alt="staff 2" class="staff-img" />
-                                </div>
-
-                                <!-- Staff member decor -->
-                                <img
-                                    src="./assets/icons/half-circle-2.svg"
-                                    alt="half circle 2"
-                                    class="absolute staff-member__decor--top"
-                                />
-                            </div>
+                            <figure class="staff-img-wrapper">
+                                <img src="./assets/img/staff-2.png" alt="staff 2" class="staff-img" />
+                            </figure>
                             <p class="desc desc--small staff__desc">Veterinarian</p>
                             <h3 class="heading heading--small staff__heading">Alissa Silva</h3>
                         </div>
 
                         <!-- Staff member 3 -->
                         <div class="staff-member">
-                            <div class="staff-img-container">
-                                <div
-                                    class="staff-img-wrapper"
-                                    style="--background: linear-gradient(180deg, #fabf3e 0%, #ffa14a 100%)"
-                                >
-                                    <img src="./assets/img/staff-3.png" alt="staff 3" class="staff-img" />
-                                </div>
-
-                                <!-- Staff member decor -->
-                                <img
-                                    src="./assets/icons/half-circle-3.svg"
-                                    alt="half circle 3"
-                                    class="absolute staff-member__decor--bottom"
-                                />
-                            </div>
+                            <figure
+                                class="staff-img-wrapper"
+                                style="--background: linear-gradient(180deg, #fabf3e 0%, #ffa14a 100%)"
+                            >
+                                <img src="./assets/img/staff-3.png" alt="staff 3" class="staff-img" />
+                            </figure>
                             <p class="desc desc--small staff__desc">Veterinarian</p>
                             <h3 class="heading heading--small staff__heading">Cindy Harris</h3>
                         </div>
 
                         <!-- Staff member 4 -->
                         <div class="staff-member">
-                            <div class="staff-img-container">
-                                <div
-                                    class="staff-img-wrapper"
-                                    style="--background: linear-gradient(180deg, #5bd6e2 0%, #00a7cc 100%)"
-                                >
-                                    <img src="./assets/img/staff-4.png" alt="staff 4" class="staff-img" />
-                                </div>
-
-                                <!-- Staff member decor -->
-                                <img
-                                    src="./assets/icons/half-circle-4.svg"
-                                    alt="half circle 4"
-                                    class="absolute staff-member__decor--top"
-                                />
-                            </div>
+                            <figure
+                                class="staff-img-wrapper"
+                                style="--background: linear-gradient(180deg, #5bd6e2 0%, #00a7cc 100%)"
+                            >
+                                <img src="./assets/img/staff-4.png" alt="staff 4" class="staff-img" />
+                            </figure>
                             <p class="desc desc--small staff__desc">Animal Caretaker</p>
                             <h3 class="heading heading--small staff__heading">Lucas Tony</h3>
                         </div>
@@ -471,74 +435,80 @@
                 </div>
             </section>
 
-            <!-- Price -->
-            <section class="price">
+            <!-- Pricing -->
+            <section class="pricing">
                 <div class="container">
                     <h2 class="heading">The Best Choice</h2>
-                    <p class="desc price__desc">
+                    <p class="desc pricing__desc">
                         We offer long-term and short-term boarding. Every dog has its own private, spacious room and
                         daily individual time in our large play yard.
                     </p>
 
-                    <!-- Price choice -->
-                    <div class="price-choice-container">
+                    <!-- Pricing switch -->
+                    <div class="pricing-switch-container">
                         <input type="checkbox" id="choice" />
-                        <label for="choice" class="btn btn--outline price-choice">
-                            <span class="price-choice__monthly">Monthly</span>
-                            <span class="price-choice__yearly">Yearly</span>
+                        <label for="choice" class="btn btn--outline pricing-switch__btn">
+                            <span class="pricing-switch__monthly">Monthly</span>
+                            <span class="pricing-switch__yearly">Yearly</span>
                         </label>
                         <img
                             src="./assets/icons/save-15percent.svg"
                             alt="save 15%"
-                            class="price-choice__save-15percent"
+                            class="pricing-switch__save-15percent"
                         />
                     </div>
 
-                    <!-- Price list -->
-                    <div class="price-list">
-                        <!-- Price item 1 -->
-                        <div class="price-item">
-                            <p class="price-title">Basic</p>
-                            <p class="price-heading">Day care</p>
-                            <p class="price-num">$150</p>
-                            <a href="#!" class="btn btn--outline price-btn">Purchase Now</a>
-                            <p class="desc desc--small price-desc">Single room</p>
-                            <p class="desc desc--small price-desc">Socialist Exercise</p>
-                            <p class="desc desc--small price-desc">Custom Meals</p>
-                            <p class="desc desc--small price-desc price-desc--disable">Spa and Grooming</p>
-                            <p class="desc desc--small price-desc price-desc--disable">Excercise 2x</p>
-                            <p class="desc desc--small price-desc price-desc--disable">Custom Meals</p>
-                            <p class="desc desc--small price-desc price-desc--disable">Grooming 2x</p>
+                    <!-- Pricing list -->
+                    <div class="pricing-list">
+                        <!-- Pricing item 1 -->
+                        <div class="pricing-item">
+                            <p class="pricing-type">Basic</p>
+                            <p class="pricing-heading">Day care</p>
+                            <p class="pricing-price">$150</p>
+                            <a href="#!" class="btn btn--outline pricing-btn">Purchase Now</a>
+                            <ul class="pricing-item__list">
+                                <li class="desc desc--small pricing-desc">Single room</li>
+                                <li class="desc desc--small pricing-desc">Socialist Exercise</li>
+                                <li class="desc desc--small pricing-desc">Custom Meals</li>
+                                <li class="desc desc--small pricing-desc pricing-desc--disable">Spa and Grooming</li>
+                                <li class="desc desc--small pricing-desc pricing-desc--disable">Exercise 2x</li>
+                                <li class="desc desc--small pricing-desc pricing-desc--disable">Custom Meals</li>
+                                <li class="desc desc--small pricing-desc pricing-desc--disable">Grooming 2x</li>
+                            </ul>
                         </div>
 
-                        <!-- Price item 2 -->
-                        <div class="price-item">
-                            <p class="price-title">Exclusive</p>
-                            <p class="price-heading">2X Care</p>
-                            <p class="price-num">$199</p>
-                            <a href="#!" class="btn btn--fill price-btn">Purchase Now</a>
-                            <p class="desc desc--small price-desc">Single room</p>
-                            <p class="desc desc--small price-desc">Socialist Exercise</p>
-                            <p class="desc desc--small price-desc">Custom Meals</p>
-                            <p class="desc desc--small price-desc">Spa and Grooming</p>
-                            <p class="desc desc--small price-desc price-desc--disable">Excercise 2x</p>
-                            <p class="desc desc--small price-desc price-desc--disable">Custom Meals</p>
-                            <p class="desc desc--small price-desc price-desc--disable">Grooming 2x</p>
+                        <!-- Pricing item 2 -->
+                        <div class="pricing-item">
+                            <p class="pricing-type">Exclusive</p>
+                            <p class="pricing-heading">2X Care</p>
+                            <p class="pricing-price">$199</p>
+                            <a href="#!" class="btn btn--fill pricing-btn">Purchase Now</a>
+                            <ul class="pricing-item__list">
+                                <li class="desc desc--small pricing-desc">Single room</li>
+                                <li class="desc desc--small pricing-desc">Socialist Exercise</li>
+                                <li class="desc desc--small pricing-desc">Custom Meals</li>
+                                <li class="desc desc--small pricing-desc">Spa and Grooming</li>
+                                <li class="desc desc--small pricing-desc pricing-desc--disable">Exercise 2x</li>
+                                <li class="desc desc--small pricing-desc pricing-desc--disable">Custom Meals</li>
+                                <li class="desc desc--small pricing-desc pricing-desc--disable">Grooming 2x</li>
+                            </ul>
                         </div>
 
-                        <!-- Price item 3 -->
-                        <div class="price-item">
-                            <p class="price-title">Platinum</p>
-                            <p class="price-heading">4X Care</p>
-                            <p class="price-num">$299</p>
-                            <a href="#!" class="btn btn--outline price-btn">Purchase Now</a>
-                            <p class="desc desc--small price-desc">Single room</p>
-                            <p class="desc desc--small price-desc">Socialist Exercise</p>
-                            <p class="desc desc--small price-desc">Custom Meals</p>
-                            <p class="desc desc--small price-desc">Spa and Grooming</p>
-                            <p class="desc desc--small price-desc">Excercise 2x</p>
-                            <p class="desc desc--small price-desc">Custom Meals</p>
-                            <p class="desc desc--small price-desc">Grooming 2x</p>
+                        <!-- Pricing item 3 -->
+                        <div class="pricing-item">
+                            <p class="pricing-type">Platinum</p>
+                            <p class="pricing-heading">4X Care</p>
+                            <p class="pricing-price">$299</p>
+                            <a href="#!" class="btn btn--outline pricing-btn">Purchase Now</a>
+                            <ul class="pricing-item__list">
+                                <li class="desc desc--small pricing-desc">Single room</li>
+                                <li class="desc desc--small pricing-desc">Socialist Exercise</li>
+                                <li class="desc desc--small pricing-desc">Custom Meals</li>
+                                <li class="desc desc--small pricing-desc">Spa and Grooming</li>
+                                <li class="desc desc--small pricing-desc">Exercise 2x</li>
+                                <li class="desc desc--small pricing-desc">Custom Meals</li>
+                                <li class="desc desc--small pricing-desc">Grooming 2x</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
